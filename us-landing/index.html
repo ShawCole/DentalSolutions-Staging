@@ -6,10 +6,14 @@
 <title>Dental Solutions Puerto Cancún | Veneers & Implants in Cancún, Planned Before You Fly</title>
 <meta name="description" content="Boutique cosmetic and implant dentistry in Puerto Cancún. Send 5 photos, get a written treatment plan with your price and days in Cancún before you book a flight.">
 <meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/cormorant.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/puerto-cancun.webp" as="image" fetchpriority="high">
 <style>
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:swap;src:url(fonts/cormorant.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400 500;font-display:swap;src:url(fonts/cormorant-italic.woff2) format('woff2')}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/manrope.woff2) format('woff2')}
 :root{
   --ink:#1f2a26; --ink-soft:#4b5753; --muted:#7c857f;
   --sand:#e9dcc6; --sand-2:#f3ebdd; --cream:#faf6ef; --paper:#fffdf9;
@@ -40,10 +44,10 @@ section{padding:28px 0}
 .btn-ghost{background:rgba(255,255,255,.7);border-color:var(--line);color:var(--ink)}
 .btn-light{background:var(--cream);color:var(--forest)}
 .btn-outline-light{border-color:rgba(255,255,255,.45);color:#fff;background:transparent}
-.glass{background:rgba(255,253,249,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.6);border-radius:var(--radius-sm)}
+.glass{background:rgba(255,253,249,.9);border:1px solid rgba(255,255,255,.6);border-radius:var(--radius-sm)}
 
 /* header */
-header.top{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.97);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
 .brand{font-family:var(--serif);font-size:1.45rem;font-weight:600;text-decoration:none;color:var(--forest);white-space:nowrap}
 .brand small{display:block;font-family:var(--sans);font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:-2px}
@@ -53,7 +57,7 @@ header.top{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.92);bac
 @media (max-width:900px){.nav ul{display:none}.nav .btn{padding:.7em 1.1em;font-size:.85rem}}
 
 /* hero */
-.hero{min-height:620px;display:grid;grid-template-columns:1.15fr .85fr;gap:28px;padding:44px;background:linear-gradient(120deg,rgba(243,235,221,.55),rgba(233,220,198,.35)),url(assets/puerto-cancun.jpg) center/cover}
+.hero{min-height:620px;display:grid;grid-template-columns:1.15fr .85fr;gap:28px;padding:44px;background:linear-gradient(120deg,rgba(243,235,221,.55),rgba(233,220,198,.35)),url(assets/puerto-cancun.webp) center/cover}
 .hero-copy{padding:40px;align-self:center}
 .hero-copy .tag{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:18px}
 .hero-copy h1 em{font-style:italic;font-weight:500}
@@ -79,7 +83,7 @@ header.top{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.92);bac
 @media (max-width:800px){.trust{grid-template-columns:1fr 1fr}.trust div:nth-child(2){border-right:0}.trust div:nth-child(-n+2){border-bottom:1px solid rgba(31,42,38,.1)}}
 
 /* treatments */
-.treat{padding:56px 44px;background:linear-gradient(rgba(233,220,198,.9),rgba(233,220,198,.94)),url(assets/operatory.jpg) center/cover}
+.treat{padding:56px 44px;background:linear-gradient(rgba(233,220,198,.9),rgba(233,220,198,.94)),url(assets/operatory.webp) center/cover}
 .sec-head{display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:end;margin-bottom:34px}
 .sec-head .lede{font-size:.95rem}
 @media (max-width:800px){.sec-head{grid-template-columns:1fr}.treat{padding:34px 18px}}
@@ -134,7 +138,7 @@ header.top{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.92);bac
 .reel figure{margin:0;scroll-snap-align:start;position:relative;border-radius:20px;overflow:hidden;aspect-ratio:9/16;background:#21302b;box-shadow:0 24px 40px -30px rgba(0,0,0,.5)}
 .reel video{width:100%;height:100%;object-fit:cover}
 .reel figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.65));color:#fff;font-family:var(--serif);font-size:1.15rem;pointer-events:none}
-.play{position:absolute;inset:0;margin:auto;width:62px;height:62px;border-radius:50%;background:rgba(255,255,255,.35);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);display:grid;place-items:center;cursor:pointer}
+.play{position:absolute;inset:0;margin:auto;width:62px;height:62px;border-radius:50%;background:rgba(23,61,49,.45);border:1px solid rgba(255,255,255,.6);display:grid;place-items:center;cursor:pointer}
 .play::after{content:"";border-left:16px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px}
 figure.playing .play{display:none}
 @media (max-width:700px){.stories{padding:34px 16px}}
@@ -156,7 +160,7 @@ figure.playing .play{display:none}
 @media (max-width:850px){.doc{grid-template-columns:1fr;padding:22px 16px}.team{grid-template-columns:1fr}}
 
 /* concierge */
-.concierge{padding:52px 44px;background:linear-gradient(rgba(23,61,49,.93),rgba(23,61,49,.95)),url(assets/puerto-cancun.jpg) center/cover;color:#fff}
+.concierge{padding:52px 44px;background:linear-gradient(rgba(23,61,49,.93),rgba(23,61,49,.95)),url(assets/puerto-cancun.webp) center/cover;color:#fff}
 .concierge .eyebrow{color:var(--gold-soft)}
 .concierge h2{margin:10px 0 12px;max-width:20ch}
 .concierge .lede{color:rgba(255,255,255,.78)}
@@ -272,7 +276,7 @@ footer a{color:var(--ink-soft)}
         </div>
       </div>
       <div class="hero-media">
-        <img src="assets/patient-real.jpg" alt="Patient smiling in the Dental Solutions treatment room after her smile design" width="640" height="1151">
+        <img src="assets/patient-real.webp" fetchpriority="high" decoding="async" alt="Patient smiling in the Dental Solutions treatment room after her smile design" width="640" height="1151">
         <div class="hero-chip glass">
           <div class="dot">✓</div>
           <div><b>Real patient</b><span>Her smile changed. So did her confidence.</span></div>
@@ -353,8 +357,8 @@ footer a{color:var(--ink-soft)}
 <section>
   <div class="wrap case">
     <div class="ba">
-      <figure><img src="assets/case-before.jpg" alt="Before: worn, discolored and uneven front teeth" loading="lazy"><figcaption>Before</figcaption></figure>
-      <figure><img src="assets/case-after.jpg" alt="After: the same patient with a bright, even smile design" loading="lazy"><figcaption>After</figcaption></figure>
+      <figure><img src="assets/case-before.webp" alt="Before: worn, discolored and uneven front teeth" loading="lazy"><figcaption>Before</figcaption></figure>
+      <figure><img src="assets/case-after.webp" alt="After: the same patient with a bright, even smile design" loading="lazy"><figcaption>After</figcaption></figure>
     </div>
     <div>
       <div class="eyebrow">Transformation</div>
@@ -405,11 +409,11 @@ footer a{color:var(--ink-soft)}
         <p class="lede">Real patients, in their own words. Every plan is designed around each person's assessment.</p>
       </div>
       <div class="reel">
-        <figure><video preload="none" playsinline poster="assets/poster-micaela.jpg" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69a9de407bdf3846d57b29d0.mp4#t=0.5"></video><span class="play" role="button" aria-label="Play Micaela's story"></span><figcaption>Micaela</figcaption></figure>
-        <figure><video preload="none" playsinline poster="assets/poster-moshi.jpg" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69aa253436702f1b4fff3135.mp4#t=0.5"></video><span class="play" role="button" aria-label="Play Moshi's story"></span><figcaption>Moshi</figcaption></figure>
-        <figure><video preload="none" playsinline poster="assets/poster-moe.jpg" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69aa257abffadfcc03c19f84.mp4#t=0.5"></video><span class="play" role="button" aria-label="Play Moë's story"></span><figcaption>Moë</figcaption></figure>
-        <figure><video preload="none" playsinline poster="assets/poster-nara.jpg" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69a9de40bffadffa05b6ff91.mp4#t=0.5"></video><span class="play" role="button" aria-label="Play Nara's story"></span><figcaption>Nara</figcaption></figure>
-        <figure><video preload="none" playsinline poster="assets/poster-gonzalo.jpg" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69a9de40b003fac523c58ecc.mp4#t=0.8"></video><span class="play" role="button" aria-label="Play Gonzalo's story"></span><figcaption>Gonzalo</figcaption></figure>
+        <figure><video preload="none" playsinline data-poster="assets/poster-micaela.webp" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69a9de407bdf3846d57b29d0.mp4#t=0.5"></video><span class="play" role="button" aria-label="Play Micaela's story"></span><figcaption>Micaela</figcaption></figure>
+        <figure><video preload="none" playsinline data-poster="assets/poster-moshi.webp" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69aa253436702f1b4fff3135.mp4#t=0.5"></video><span class="play" role="button" aria-label="Play Moshi's story"></span><figcaption>Moshi</figcaption></figure>
+        <figure><video preload="none" playsinline data-poster="assets/poster-moe.webp" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69aa257abffadfcc03c19f84.mp4#t=0.5"></video><span class="play" role="button" aria-label="Play Moë's story"></span><figcaption>Moë</figcaption></figure>
+        <figure><video preload="none" playsinline data-poster="assets/poster-nara.webp" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69a9de40bffadffa05b6ff91.mp4#t=0.5"></video><span class="play" role="button" aria-label="Play Nara's story"></span><figcaption>Nara</figcaption></figure>
+        <figure><video preload="none" playsinline data-poster="assets/poster-gonzalo.webp" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69a9de40b003fac523c58ecc.mp4#t=0.8"></video><span class="play" role="button" aria-label="Play Gonzalo's story"></span><figcaption>Gonzalo</figcaption></figure>
       </div>
       <p class="fine" style="text-align:center;color:var(--ink-soft)">Testimonials shared with each patient's permission. Experiences are individual and results depend on each case.</p>
     </div>
@@ -421,7 +425,7 @@ footer a{color:var(--ink-soft)}
   <div class="wrap">
     <div class="panel doc">
       <div class="doc-photo">
-        <img src="assets/dra-carolina.jpg" alt="Dr. Carolina Aguirre, clinical director of Dental Solutions Puerto Cancún" loading="lazy">
+        <img src="assets/dra-carolina.webp" alt="Dr. Carolina Aguirre, clinical director of Dental Solutions Puerto Cancún" loading="lazy">
         <div class="badge glass"><b>25</b>years of clinical practice</div>
       </div>
       <div style="padding-top:10px">
@@ -675,7 +679,7 @@ document.querySelectorAll('.reel figure').forEach(f=>{
   v.addEventListener('ended',()=>f.classList.remove('playing'));
 });
 /* load first frames only when the reel is near the viewport */
-new IntersectionObserver((es,o)=>{es.forEach(e=>{if(e.isIntersecting){document.querySelectorAll('.reel video').forEach(v=>v.preload='metadata');o.disconnect();}})},{rootMargin:'400px'}).observe(document.querySelector('.reel'));
+new IntersectionObserver((es,o)=>{es.forEach(e=>{if(e.isIntersecting){document.querySelectorAll('.reel video').forEach(v=>{v.poster=v.dataset.poster;});o.disconnect();}})},{rootMargin:'400px'}).observe(document.querySelector('.reel'));
 
 /* ---------- photo slots ---------- */
 document.querySelectorAll('.shot input').forEach(inp=>inp.addEventListener('change',()=>inp.closest('.shot').classList.toggle('done',inp.files.length>0)));
