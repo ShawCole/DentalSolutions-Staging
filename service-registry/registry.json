@@ -1418,5 +1418,6 @@
       "dark": "cluster has zero live ads - revenue exposure",
       "no-creative": "cluster has never had an ad"
     }
-  }
+  },
+  "generation_zero_assets": "local_creative_audit.json"
 }

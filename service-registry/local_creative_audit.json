@@ -1,0 +1,32 @@
+{
+  "audited_at": "2026-10-30",
+  "method": "Manual visual review of each image. Jev (TypeSafe) rejects binary image input, so visual description is done by Claude and Jev is reserved for bulk classification of the resulting text plus ad copy.",
+  "source": "digital_assets/photos (WhatsApp exports, 2025-12-17)",
+  "summary": "6 images, 0 treatment creative. All are clinic or location shots. 1 is US-ad-ready as a destination asset, 2 are usable after cleanup, 3 are support-only.",
+  "assets": [
+    {"file": "PHOTO-2025-12-17-21-07-18 5.jpg", "subject": "Elevated view over Puerto Cancun: marina with yachts, golf course, turquoise water, luxury towers, blue sky.",
+     "mapped_cluster": "all (destination layer)", "verdict": "ready",
+     "reason": "Strongest asset in the set. Sells the trip, not the drill. Answers the US patient's unspoken fear that Mexico means a strip-mall clinic. Crop out the parking lot in the lower third before use."},
+    {"file": "PHOTO-2025-12-17-21-07-18 6.jpg", "subject": "Operatory, straight-on: white dental chair, floor-to-ceiling window onto a modern condo tower and greenery, ring lights, decorative mirror.",
+     "mapped_cluster": "cl-cosmetic", "verdict": "needs-rework",
+     "reason": "Bright, modern and the window view is a real differentiator. But visible clutter undermines a premium price point: exposed cable bundle and power strip on the floor, paper towel roll, tissue box, tripod stands. A reshoot after a 10-minute tidy makes this ready."},
+    {"file": "PHOTO-2025-12-17-21-07-18.jpg", "subject": "Same operatory, wider angle, includes wall clock, operator stool, towels and a coffee cup on the counter.",
+     "mapped_cluster": "cl-cosmetic", "verdict": "needs-rework",
+     "reason": "Duplicate of the stronger straight-on shot with more clutter in frame. Keep 6 and retire this one."},
+    {"file": "PHOTO-2025-12-17-21-07-18 4.jpg", "subject": "Second operatory from the doorway: sink cabinet, vacuum-former, hand sanitizer, chair partly hidden, window view.",
+     "mapped_cluster": "none", "verdict": "retire",
+     "reason": "Reads as a utility room. The chair is barely visible, the lab equipment and sanitizer bottle dominate, and nothing in frame says cosmetic or premium."},
+    {"file": "PHOTO-2025-12-17-21-07-18 2.jpg", "subject": "Building exterior, vertical: grey facade with a large circular cutout, purple stair tower, palm trees, a 'WOHA' tenant sign, a man on the steps.",
+     "mapped_cluster": "all (trust layer)", "verdict": "needs-rework",
+     "reason": "Vertical 9:16 framing suits Stories and Reels, and it proves a real modern building. But the most legible signage belongs to another tenant, and the subject is an unrelated passer-by. Usable as a 'find us' frame inside a video, not as a standalone ad."},
+    {"file": "PHOTO-2025-12-17-21-07-18 3.jpg", "subject": "Mexican flag flying in front of a glass entrance marked '13'.",
+     "mapped_cluster": "none", "verdict": "wrong-market",
+     "reason": "Fine for local or Spanish-language posts. For US prospecting it amplifies foreignness at exactly the moment the ad needs to reduce perceived risk. Do not use in US campaigns."}
+  ],
+  "gaps": [
+    "No before/after imagery in the local set, which is the single most important creative type for every tier-1 cluster.",
+    "No imagery at all for full-arch, All-on-4, snap-on or dentures.",
+    "No doctor or team portraits. Dr. Carolina's face is the trust anchor and does not appear.",
+    "No aesthetics-service imagery, consistent with those SKUs being missing from the price list."
+  ]
+}
