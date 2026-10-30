@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dental Solutions Puerto Cancún | Veneers & Implants in Cancún, Planned Before You Fly</title>
+<meta name="description" content="Boutique cosmetic and implant dentistry in Puerto Cancún. Send 5 photos, get a written treatment plan with your price and days in Cancún before you book a flight.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f2a26; --ink-soft:#4b5753; --muted:#7c857f;
+  --sand:#e9dcc6; --sand-2:#f3ebdd; --cream:#faf6ef; --paper:#fffdf9;
+  --forest:#173d31; --forest-2:#21503f; --gold:#b39159; --gold-soft:#d9c29a;
+  --line:rgba(31,42,38,.12); --radius:28px; --radius-sm:16px;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1200px,calc(100% - 32px));margin-inline:auto}
+.panel{border-radius:var(--radius);overflow:hidden;position:relative}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(3rem,7vw,5.6rem);font-weight:600}
+h2{font-size:clamp(2.1rem,4.4vw,3.4rem)}
+h3{font-size:1.55rem}
+p{margin:0}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--forest-2)}
+.lede{color:var(--ink-soft);font-size:1.06rem;max-width:56ch}
+section{padding:28px 0}
+.btn{display:inline-flex;align-items:center;gap:.5em;padding:.95em 1.5em;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid transparent;cursor:pointer;font-family:var(--sans);transition:transform .15s ease,background .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--forest);color:#fff}
+.btn-primary:hover{background:var(--forest-2)}
+.btn-ghost{background:rgba(255,255,255,.7);border-color:var(--line);color:var(--ink)}
+.btn-light{background:var(--cream);color:var(--forest)}
+.btn-outline-light{border-color:rgba(255,255,255,.45);color:#fff;background:transparent}
+.glass{background:rgba(255,253,249,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.6);border-radius:var(--radius-sm)}
+
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.brand{font-family:var(--serif);font-size:1.45rem;font-weight:600;text-decoration:none;color:var(--forest);white-space:nowrap}
+.brand small{display:block;font-family:var(--sans);font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:-2px}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:.9rem;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--ink-soft)}
+.nav ul a:hover{color:var(--forest)}
+@media (max-width:900px){.nav ul{display:none}.nav .btn{padding:.7em 1.1em;font-size:.85rem}}
+
+/* hero */
+.hero{min-height:620px;display:grid;grid-template-columns:1.15fr .85fr;gap:28px;padding:44px;background:linear-gradient(120deg,rgba(243,235,221,.55),rgba(233,220,198,.35)),url(assets/puerto-cancun.jpg) center/cover}
+.hero-copy{padding:40px;align-self:center}
+.hero-copy .tag{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:18px}
+.hero-copy h1 em{font-style:italic;font-weight:500}
+.hero-copy .sub{font-family:var(--serif);font-size:1.6rem;line-height:1.25;margin:18px 0 12px}
+.hero-copy .sub i{font-weight:600}
+.hero-copy .lede{margin-bottom:26px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero-media{position:relative;align-self:center;justify-self:center;width:min(330px,100%)}
+.hero-media img{width:100%;height:auto;max-height:520px;border-radius:22px;border:5px solid rgba(255,255,255,.75);box-shadow:0 30px 60px -30px rgba(23,61,49,.5);aspect-ratio:3/4;object-fit:cover;object-position:top}
+.hero-chip{position:absolute;left:-38px;right:-10px;bottom:-26px;display:flex;align-items:center;gap:12px;padding:12px 16px}
+.hero-chip b{display:block;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--forest-2)}
+.hero-chip span{font-family:var(--serif);font-size:1.12rem}
+.hero-chip .dot{width:38px;height:38px;border-radius:50%;background:var(--forest);display:grid;place-items:center;color:#fff;flex:none}
+@media (max-width:900px){.hero{grid-template-columns:1fr;padding:18px}.hero-copy{padding:26px}.hero-media{margin:10px auto 40px}.hero-chip{left:-6px;right:-6px}}
+
+/* trust strip */
+.trust{display:grid;grid-template-columns:repeat(4,1fr);background:var(--sand);border-radius:var(--radius);margin-top:18px}
+.trust div{padding:22px 26px;border-right:1px solid rgba(31,42,38,.1)}
+.trust div:last-child{border-right:0}
+.trust strong{display:block;font-family:var(--serif);font-size:1.5rem;font-weight:600;line-height:1.1}
+.trust span{font-size:.84rem;color:var(--ink-soft)}
+.trust a{color:var(--forest);font-weight:600}
+@media (max-width:800px){.trust{grid-template-columns:1fr 1fr}.trust div:nth-child(2){border-right:0}.trust div:nth-child(-n+2){border-bottom:1px solid rgba(31,42,38,.1)}}
+
+/* treatments */
+.treat{padding:56px 44px;background:linear-gradient(rgba(233,220,198,.9),rgba(233,220,198,.94)),url(assets/operatory.jpg) center/cover}
+.sec-head{display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:end;margin-bottom:34px}
+.sec-head .lede{font-size:.95rem}
+@media (max-width:800px){.sec-head{grid-template-columns:1fr}.treat{padding:34px 18px}}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:950px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.cards{grid-template-columns:1fr}}
+.card{background:rgba(255,253,249,.88);border:1px solid rgba(255,255,255,.7);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.card .eyebrow{font-size:.66rem}
+.card p{font-size:.9rem;color:var(--ink-soft)}
+.card .price{font-family:var(--serif);font-size:1.7rem;font-weight:600;color:var(--forest);margin-top:auto;padding-top:8px}
+.card .price small{font-family:var(--sans);font-size:.75rem;font-weight:500;color:var(--muted)}
+.facts{display:flex;flex-wrap:wrap;gap:6px}
+.facts span{font-size:.72rem;font-weight:600;background:var(--sand-2);border-radius:999px;padding:4px 10px;color:var(--ink-soft)}
+.card.hero-card{background:var(--forest);color:#fff;border-color:var(--forest)}
+.card.hero-card p{color:rgba(255,255,255,.78)}
+.card.hero-card .eyebrow{color:var(--gold-soft)}
+.card.hero-card .price{color:#fff}.card.hero-card .price small{color:rgba(255,255,255,.6)}
+.card.hero-card .facts span{background:rgba(255,255,255,.12);color:#fff}
+.fine{font-size:.76rem;color:var(--muted);margin-top:18px}
+
+/* case */
+.case{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px 0}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ba figure{margin:0;position:relative}
+.ba img{border-radius:20px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.ba figcaption{position:absolute;top:12px;left:12px;background:rgba(255,253,249,.9);border-radius:999px;padding:4px 12px;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.case h2{margin:12px 0 16px}
+@media (max-width:850px){.case{grid-template-columns:1fr}}
+
+/* quiz */
+.quiz{display:grid;grid-template-columns:1fr 1.05fr;gap:30px;padding:48px;background:var(--cream)}
+.quiz-box{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 30px 60px -40px rgba(23,61,49,.35)}
+.quiz-top{display:flex;justify-content:space-between;align-items:center;font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--forest-2)}
+.bar{height:2px;background:var(--line);margin:14px 0 22px;border-radius:2px}
+.bar i{display:block;height:100%;background:var(--gold);width:25%;transition:width .3s}
+.quiz-box h3{margin-bottom:6px}
+.quiz-box .hint{font-size:.85rem;color:var(--muted);margin-bottom:18px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{display:flex;align-items:center;gap:10px;text-align:left;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;font:500 .9rem var(--sans);color:var(--ink);cursor:pointer;transition:border-color .15s,background .15s}
+.opt:hover{border-color:var(--gold)}
+.opt .k{width:24px;height:24px;border-radius:50%;border:1px solid var(--gold-soft);display:grid;place-items:center;font-size:.72rem;color:var(--gold);flex:none}
+.result{display:none}
+.result.on{display:block}
+.result .route{background:var(--sand-2);border-radius:14px;padding:16px 18px;margin:14px 0 18px}
+.result .route strong{font-family:var(--serif);font-size:1.4rem;font-weight:600;display:block}
+.quiz .disclaimer{font-size:.74rem;color:var(--muted);margin-top:14px;text-align:right}
+@media (max-width:850px){.quiz{grid-template-columns:1fr;padding:26px 16px}.opts{grid-template-columns:1fr}}
+
+/* stories */
+.stories{padding:52px 44px 40px;background:linear-gradient(180deg,var(--paper) 0%,var(--sand) 45%,#c4a676 100%)}
+.reel{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,1fr);gap:16px;overflow-x:auto;padding:30px 2px 10px;scroll-snap-type:x mandatory}
+.reel figure{margin:0;scroll-snap-align:start;position:relative;border-radius:20px;overflow:hidden;aspect-ratio:9/16;background:#21302b;box-shadow:0 24px 40px -30px rgba(0,0,0,.5)}
+.reel video{width:100%;height:100%;object-fit:cover}
+.reel figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.65));color:#fff;font-family:var(--serif);font-size:1.15rem;pointer-events:none}
+.play{position:absolute;inset:0;margin:auto;width:62px;height:62px;border-radius:50%;background:rgba(255,255,255,.35);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);display:grid;place-items:center;cursor:pointer}
+.play::after{content:"";border-left:16px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px}
+figure.playing .play{display:none}
+@media (max-width:700px){.stories{padding:34px 16px}}
+
+/* doctor */
+.doc{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;padding:48px;background:var(--cream)}
+.doc-photo{position:relative}
+.doc-photo img{border-radius:22px;border:2px solid var(--gold-soft);aspect-ratio:4/5;object-fit:cover;object-position:top;width:100%}
+.doc-photo .badge{position:absolute;left:18px;right:18px;bottom:-22px;text-align:center;padding:14px}
+.doc-photo .badge b{font-family:var(--serif);font-size:1.9rem;font-weight:600;margin-right:6px}
+.doc ul{padding-left:18px;margin:16px 0;color:var(--ink-soft);font-size:.92rem}
+.doc ul li{margin-bottom:5px}
+.verify{display:inline-flex;gap:8px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:.85rem;margin:6px 0 16px}
+.verify a{color:var(--forest);font-weight:700}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}
+.team div{background:var(--sand-2);border-radius:12px;padding:12px 14px;font-size:.82rem;color:var(--ink-soft)}
+.team b{display:block;font-family:var(--serif);font-size:1.15rem;color:var(--ink);font-weight:600}
+.sig{width:220px;opacity:.75;margin-top:8px}
+@media (max-width:850px){.doc{grid-template-columns:1fr;padding:22px 16px}.team{grid-template-columns:1fr}}
+
+/* concierge */
+.concierge{padding:52px 44px;background:linear-gradient(rgba(23,61,49,.93),rgba(23,61,49,.95)),url(assets/puerto-cancun.jpg) center/cover;color:#fff}
+.concierge .eyebrow{color:var(--gold-soft)}
+.concierge h2{margin:10px 0 12px;max-width:20ch}
+.concierge .lede{color:rgba(255,255,255,.78)}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:34px 0 30px}
+.steps div{border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:18px 16px;background:rgba(255,255,255,.05)}
+.steps em{font-family:var(--serif);font-style:normal;font-size:2rem;color:var(--gold-soft);display:block;line-height:1}
+.steps b{display:block;margin:10px 0 4px;font-size:.92rem}
+.steps p{font-size:.8rem;color:rgba(255,255,255,.72)}
+@media (max-width:1000px){.steps{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:600px){.steps{grid-template-columns:1fr 1fr}.concierge{padding:30px 16px}}
+
+/* stay table */
+.stay{display:grid;grid-template-columns:1fr 1.3fr;gap:40px;padding:48px 0;align-items:start}
+.stay table{width:100%;border-collapse:collapse;font-size:.95rem}
+.stay td{padding:14px 4px;border-bottom:1px solid var(--line)}
+.stay td:last-child{text-align:right;font-family:var(--serif);font-size:1.2rem;font-weight:600;color:var(--forest)}
+@media (max-width:850px){.stay{grid-template-columns:1fr}}
+
+/* promises */
+.promises{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.promise{border-radius:var(--radius);padding:40px;background:var(--sand)}
+.promise.dark{background:var(--forest);color:#fff}
+.promise.dark .eyebrow{color:var(--gold-soft)}
+.promise.dark .lede{color:rgba(255,255,255,.78)}
+.promise h3{font-size:2rem;margin:10px 0 14px}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+.tiers div{background:#fff;border-radius:14px;padding:16px}
+.tiers b{font-family:var(--serif);font-size:1.6rem;font-weight:600;display:block;line-height:1}
+.tiers span{font-size:.76rem;color:var(--muted)}
+.promise ul{margin:16px 0 0;padding-left:18px;color:rgba(255,255,255,.85);font-size:.92rem}
+@media (max-width:850px){.promises{grid-template-columns:1fr}.promise{padding:26px}}
+
+/* assessment */
+.assess-head{margin:20px 0 26px}
+.assess>*,.grid2>*,.shots>*{min-width:0}
+.assess{display:grid;grid-template-columns:1.25fr .75fr;gap:16px;align-items:start}
+.box{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.box h3{margin-bottom:6px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+label.f{display:flex;flex-direction:column;gap:6px;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;min-width:0;font:400 .95rem var(--sans);padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--ink);text-transform:none;letter-spacing:0}
+textarea{min-height:90px;resize:vertical}
+.shots{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:14px 0 18px}
+.shot{background:#fff;border:1px dashed var(--gold-soft);border-radius:14px;padding:12px;text-align:center;font-size:.78rem;color:var(--ink-soft);cursor:pointer;position:relative;display:flex;flex-direction:column;align-items:center;gap:6px}
+.shot svg{width:100%;max-width:90px;height:auto}
+.shot b{display:block;color:var(--ink);font-size:.82rem}
+.shot input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.shot.done{border-style:solid;border-color:var(--forest);background:#f1f6f3}
+.shot.done::after{content:"✓ Added";font-size:.7rem;font-weight:700;color:var(--forest)}
+.consent{display:flex;gap:10px;font-size:.82rem;color:var(--ink-soft);margin:14px 0 18px;align-items:flex-start}
+.consent input{margin-top:3px}
+.side h3{font-size:1.7rem}
+.side ol{padding-left:18px;color:var(--ink-soft);font-size:.92rem}
+.side ol li{margin-bottom:8px}
+.wa{display:flex;align-items:center;gap:10px;background:#25d366;color:#fff;border-radius:999px;padding:.9em 1.4em;font-weight:700;text-decoration:none;justify-content:center;margin-top:14px}
+.thanks{display:none;background:#f1f6f3;border:1px solid var(--forest);border-radius:16px;padding:20px;margin-top:10px}
+@media (max-width:950px){.assess{grid-template-columns:1fr}.shots{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.grid2{grid-template-columns:1fr}.shots{grid-template-columns:1fr 1fr}.box{padding:20px}}
+
+/* faq */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;padding:48px 0}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font-family:var(--serif);font-size:1.3rem;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold);font-size:1.5rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--ink-soft);margin-top:10px;font-size:.95rem}
+@media (max-width:850px){.faq{grid-template-columns:1fr}}
+
+/* final */
+.final{background:var(--forest);color:#fff;text-align:center;padding:64px 24px}
+.final h2{max-width:24ch;margin:0 auto 26px}
+.final .hero-ctas{justify-content:center}
+footer{padding:34px 0 110px;font-size:.84rem;color:var(--muted)}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+footer a{color:var(--ink-soft)}
+
+/* sticky mobile */
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:none;gap:8px}
+.sticky a{flex:1;justify-content:center}
+@media (max-width:800px){.sticky{display:flex}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top">Dental Solutions<small>Puerto Cancún · Mexico</small></a>
+    <ul>
+      <li><a href="#treatments">Treatments</a></li>
+      <li><a href="#trip">Your trip</a></li>
+      <li><a href="#doctor">Dr. Carolina</a></li>
+      <li><a href="#promises">Our promises</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#assessment">Free photo review</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section style="padding-top:18px">
+  <div class="wrap">
+    <div class="panel hero">
+      <div class="hero-copy glass">
+        <div class="tag">Boutique dental clinic · Puerto Cancún</div>
+        <h1>Smile at<br><em>life</em> again.</h1>
+        <p class="sub">Your smile deserves <i>judgment</i>, precision, and a plan made for you.</p>
+        <p class="lede">Cosmetic dentistry, full-mouth restoration and implants in one private clinic. Send five photos and get your written plan, your price and your days in Cancún <strong>before you book a flight</strong>.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#assessment">Get my free plan →</a>
+          <a class="btn btn-ghost" href="#quiz">Take the 30-second smile quiz</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/patient-real.jpg" alt="Patient smiling in the Dental Solutions treatment room after her smile design" width="640" height="1151">
+        <div class="hero-chip glass">
+          <div class="dot">✓</div>
+          <div><b>Real patient</b><span>Her smile changed. So did her confidence.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust">
+      <div><strong>25 years</strong><span>of clinical practice by Dr. Carolina Aguirre</span></div>
+      <div><strong>Licensed in Mexico</strong><span>Professional license 11582421. <a href="https://www.cedulaprofesional.sep.gob.mx/" target="_blank" rel="noopener">Verify it yourself</a></span></div>
+      <div><strong>Planned before you fly</strong><span>Your case is reviewed and priced in writing first</span></div>
+      <div><strong>Follow-up at home</strong><span>Video calls with the clinical team after you return</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENTS -->
+<section id="treatments">
+  <div class="wrap">
+    <div class="panel treat">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">Treatments</div>
+          <h2 style="margin-top:10px">First, the least invasive option that solves your case.</h2>
+        </div>
+        <p class="lede">Every plan is set after your clinical assessment. These are reference prices in US dollars, so you can compare before you talk to anyone.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="eyebrow">Veneers</div>
+          <h3>Composite veneers</h3>
+          <p>Color, shape and small gaps corrected by hand, directly on your teeth. No lab wait.</p>
+          <div class="facts"><span>2–3 days in Cancún</span><span>1-year warranty</span></div>
+          <div class="price">$250 <small>per tooth</small></div>
+        </article>
+        <article class="card hero-card">
+          <div class="eyebrow">Veneers · Most requested</div>
+          <h3>E-max &amp; zirconia veneers</h3>
+          <p>High-strength ceramic that mimics natural translucency, designed around your face. Three appointments.</p>
+          <div class="facts"><span>3–4 days in Cancún</span><span>5-year warranty</span><span>Ivoclar ceramics</span></div>
+          <div class="price">$450 <small>per tooth</small></div>
+        </article>
+        <article class="card">
+          <div class="eyebrow">Full-arch restoration</div>
+          <h3>All-on-4 &amp; All-on-6</h3>
+          <p>A complete fixed arch on 4 or 6 implants, to eat, speak and smile without a removable denture.</p>
+          <div class="facts"><span>2 stays of 5–7 days</span><span>Up to 5-year warranty</span></div>
+          <div class="price">from $9,900 <small>per arch, phase one*</small></div>
+        </article>
+        <article class="card">
+          <div class="eyebrow">Implants</div>
+          <h3>Dental implants</h3>
+          <p>Replace one or several teeth without touching the neighbors. 3D-planned, Neodent and Alpha-Bio Tec systems.</p>
+          <div class="facts"><span>2 stages</span><span>Placed by an implantologist</span></div>
+          <div class="price">from $1,744 <small>implant, abutment &amp; crown</small></div>
+        </article>
+        <article class="card">
+          <div class="eyebrow">Restoration</div>
+          <h3>Crowns</h3>
+          <p>When a veneer is not the right answer for a damaged or root-treated tooth.</p>
+          <div class="facts"><span>Porcelain, zirconia, E-max</span></div>
+          <div class="price">from $465 <small>per crown</small></div>
+        </article>
+        <article class="card">
+          <div class="eyebrow">Restoration</div>
+          <h3>Fixed &amp; removable prosthetics</h3>
+          <p>Bridges, dentures and implant-retained snap-on options, chosen for function and looks.</p>
+          <div class="facts"><span>Plan-dependent</span></div>
+          <div class="price">Quoted <small>in your written plan</small></div>
+        </article>
+      </div>
+      <p class="fine">*All-on-4 phase one covers implant placement and a fixed provisional arch; the final prosthesis is quoted in your plan. All-on-6 from $11,900 per arch. Final prices are confirmed in writing after your assessment. Warranties are subject to maintenance, check-ups and conditions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CASE -->
+<section>
+  <div class="wrap case">
+    <div class="ba">
+      <figure><img src="assets/case-before.jpg" alt="Before: worn, discolored and uneven front teeth" loading="lazy"><figcaption>Before</figcaption></figure>
+      <figure><img src="assets/case-after.jpg" alt="After: the same patient with a bright, even smile design" loading="lazy"><figcaption>After</figcaption></figure>
+    </div>
+    <div>
+      <div class="eyebrow">Transformation</div>
+      <h2>His smile changed, and his confidence did too.</h2>
+      <p class="lede">Worn, chipped and discolored front teeth, redesigned as a natural, even smile. We explain every case from the clinical decision: what we kept, what we changed, and why.</p>
+      <p style="margin-top:22px"><a class="btn btn-primary" href="#assessment">See what's possible for you →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz">
+  <div class="wrap">
+    <div class="panel quiz">
+      <div style="align-self:center">
+        <div class="eyebrow">Quiz · Design your smile</div>
+        <h2 style="margin:12px 0 16px">Find out which route we would assess with you.</h2>
+        <p class="lede">Four quick questions. You get a suggested treatment route, a typical stay length, and a one-tap way to continue with our team on WhatsApp.</p>
+      </div>
+      <div class="quiz-box" aria-live="polite">
+        <div class="quiz-top"><span>Design your smile</span><span id="qcount">01 / 04</span></div>
+        <div class="bar"><i id="qbar"></i></div>
+        <div id="qstage"></div>
+        <div class="result" id="qresult">
+          <h3>Your suggested route</h3>
+          <div class="route"><strong id="rname"></strong><span id="rdesc" style="font-size:.9rem;color:var(--ink-soft)"></span></div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px">
+            <a class="btn btn-primary" id="rwa" target="_blank" rel="noopener">Continue on WhatsApp</a>
+            <a class="btn btn-ghost" href="#assessment">Send my photos</a>
+            <button class="btn btn-ghost" type="button" id="rrestart">Start over</button>
+          </div>
+        </div>
+        <p class="disclaimer">Guidance only. It does not replace a clinical assessment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORIES -->
+<section id="stories">
+  <div class="wrap">
+    <div class="panel stories">
+      <div class="sec-head" style="margin-bottom:0">
+        <div>
+          <div class="eyebrow">Stories that inspire</div>
+          <h2 style="margin-top:10px">Hear it from people who smile again.</h2>
+        </div>
+        <p class="lede">Real patients, in their own words. Every plan is designed around each person's assessment.</p>
+      </div>
+      <div class="reel">
+        <figure><video preload="none" playsinline poster="assets/poster-micaela.jpg" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69a9de407bdf3846d57b29d0.mp4#t=0.5"></video><span class="play" role="button" aria-label="Play Micaela's story"></span><figcaption>Micaela</figcaption></figure>
+        <figure><video preload="none" playsinline poster="assets/poster-moshi.jpg" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69aa253436702f1b4fff3135.mp4#t=0.5"></video><span class="play" role="button" aria-label="Play Moshi's story"></span><figcaption>Moshi</figcaption></figure>
+        <figure><video preload="none" playsinline poster="assets/poster-moe.jpg" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69aa257abffadfcc03c19f84.mp4#t=0.5"></video><span class="play" role="button" aria-label="Play Moë's story"></span><figcaption>Moë</figcaption></figure>
+        <figure><video preload="none" playsinline poster="assets/poster-nara.jpg" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69a9de40bffadffa05b6ff91.mp4#t=0.5"></video><span class="play" role="button" aria-label="Play Nara's story"></span><figcaption>Nara</figcaption></figure>
+        <figure><video preload="none" playsinline poster="assets/poster-gonzalo.jpg" src="https://assets.cdn.filesafe.space/dq3ylOAKb1QTcAeFKnwl/media/69a9de40b003fac523c58ecc.mp4#t=0.8"></video><span class="play" role="button" aria-label="Play Gonzalo's story"></span><figcaption>Gonzalo</figcaption></figure>
+      </div>
+      <p class="fine" style="text-align:center;color:var(--ink-soft)">Testimonials shared with each patient's permission. Experiences are individual and results depend on each case.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTOR -->
+<section id="doctor">
+  <div class="wrap">
+    <div class="panel doc">
+      <div class="doc-photo">
+        <img src="assets/dra-carolina.jpg" alt="Dr. Carolina Aguirre, clinical director of Dental Solutions Puerto Cancún" loading="lazy">
+        <div class="badge glass"><b>25</b>years of clinical practice</div>
+      </div>
+      <div style="padding-top:10px">
+        <div class="eyebrow">Dr. Carolina Aguirre · Clinical director</div>
+        <h2 style="margin:12px 0 14px">Keep what's natural, whenever possible.</h2>
+        <p class="lede">Twenty-five years of clinical decisions with one priority: preserve as much of your natural tooth as the case allows, and design every smile individually. She diagnoses, designs and performs your treatment from start to finish.</p>
+        <ul>
+          <li>Doctor of Dental Surgery, Fundación Universitaria San Martín, Colombia (2001)</li>
+          <li>Aesthetic Concepts in Modern Oral Rehabilitation, Pontificia Universidad Javeriana</li>
+          <li>Intensive course in ceramic and polymer veneers, CIEO Colombia</li>
+          <li>Implantology seminars with Nobel Biocare</li>
+        </ul>
+        <div class="verify">🛡️ Mexican professional license <b>11582421</b> · <a href="https://www.cedulaprofesional.sep.gob.mx/" target="_blank" rel="noopener">Look it up in the national registry →</a></div>
+        <div class="team">
+          <div><b>Dr. Carolina Aguirre</b>Aesthetic &amp; restorative dentistry</div>
+          <div><b>Dr. Edgar Mendoza</b>Implantology</div>
+          <div><b>Dr. Javier Peña</b>Periodontics</div>
+        </div>
+        <img class="sig" src="assets/signature.png" alt="Signature of Dr. Carolina Aguirre" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONCIERGE -->
+<section id="trip">
+  <div class="wrap">
+    <div class="panel concierge">
+      <div class="eyebrow">Concierge</div>
+      <h2>Your treatment starts before you land in Cancún.</h2>
+      <p class="lede">We coordinate your appointments around your flights and help with hotel and transfers if you want it. You choose the services. You see the full quote before you reserve anything.</p>
+      <div class="steps">
+        <div><em>01</em><b>Pre-assessment</b><p>Your photos and a video call, before you travel.</p></div>
+        <div><em>02</em><b>Written plan</b><p>Treatment, appointments, days and price.</p></div>
+        <div><em>03</em><b>Quote</b><p>You pick flight, hotel and transfer help.</p></div>
+        <div><em>04</em><b>Itinerary</b><p>Appointments, times and contacts in one place.</p></div>
+        <div><em>05</em><b>In Cancún</b><p>Welcome, clinical schedule, English-speaking team.</p></div>
+        <div><em>06</em><b>Back home</b><p>Remote follow-up in English or Spanish.</p></div>
+      </div>
+      <a class="btn btn-light" href="#assessment">Plan my treatment and my trip</a>
+    </div>
+  </div>
+</section>
+
+<!-- STAY -->
+<section>
+  <div class="wrap stay">
+    <div>
+      <div class="eyebrow">Estimated stay</div>
+      <h2 style="margin:12px 0 14px">How many days do you need in Cancún?</h2>
+      <p class="lede">Reference estimates. Your exact days are confirmed in your written plan, after your assessment and before you buy a flight. Cancún has nonstop flights from dozens of US cities, and the clinic sits in quiet, residential Puerto Cancún, minutes from the hotel zone.</p>
+    </div>
+    <table>
+      <tr><td>Composite veneers</td><td>2–3 days</td></tr>
+      <tr><td>E-max &amp; zirconia veneers</td><td>3–4 days</td></tr>
+      <tr><td>Dental implants</td><td>2 stages</td></tr>
+      <tr><td>All-on-4 &amp; All-on-6</td><td>2 stays · 5–7 days each</td></tr>
+      <tr><td>Crowns &amp; prosthetics</td><td>Per your plan</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- PROMISES -->
+<section id="promises">
+  <div class="wrap promises">
+    <div class="promise">
+      <div class="eyebrow">International warranty</div>
+      <h3>Up to 5 years on indirect veneers and selected implant restorations.</h3>
+      <p class="lede">Subject to assessment, maintenance and conditions. Covers the clinical work when the case qualifies. It does not cover flights, hotel, transport, meals or lost income.</p>
+      <div class="tiers">
+        <div><b>1 year</b><span>Composite veneers</span></div>
+        <div><b>5 years</b><span>E-max &amp; zirconia</span></div>
+        <div><b>Up to 5</b><span>Implant prosthetics</span></div>
+      </div>
+    </div>
+    <div class="promise dark">
+      <div class="eyebrow">Deposit policy</div>
+      <h3>If you cancel, your deposit is never lost.</h3>
+      <p class="lede">Cancel with notice and 100% of your deposit becomes credit with us, valid for 12 months and transferable to someone else.</p>
+      <ul>
+        <li>The virtual assessment needs no deposit at all.</li>
+        <li>Your deposit is deducted from your treatment total. It is never an extra charge.</li>
+        <li>Full refund if we cancel, if Dr. Carolina decides the treatment is not right for you, or if a hurricane, airport closure, airline cancellation or medical emergency stops your trip.</li>
+        <li>Card payments run through Stripe. The clinic never stores your full card details.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ASSESSMENT -->
+<section id="assessment">
+  <div class="wrap">
+    <div class="assess-head">
+      <div class="eyebrow">Free virtual assessment</div>
+      <h2 style="margin-top:10px">Before you book a flight, let's review your case.</h2>
+    </div>
+    <div class="assess">
+      <form class="box" name="photo-assessment" method="POST" data-netlify="true" netlify-honeypot="company" enctype="multipart/form-data" id="aform">
+        <input type="hidden" name="form-name" value="photo-assessment">
+        <p hidden><label>Leave empty <input name="company"></label></p>
+        <h3>Send us 5 photos and get your pre-assessment within 24 hours.</h3>
+        <div class="grid2">
+          <label class="f">Name<input type="text" name="name" required autocomplete="name"></label>
+          <label class="f">Email<input type="email" name="email" required autocomplete="email"></label>
+          <label class="f">WhatsApp or mobile<input type="tel" name="phone" placeholder="+1 512 555 0142" autocomplete="tel"></label>
+          <label class="f">State or country<input type="text" name="location" placeholder="Texas, USA"></label>
+        </div>
+        <label class="f">What would you most like to improve?
+          <select name="goal" id="goal">
+            <option value="">Choose one</option>
+            <option>Color of my teeth</option>
+            <option>Shape or size</option>
+            <option>Gaps between teeth</option>
+            <option>Worn or chipped teeth</option>
+            <option>Missing teeth</option>
+            <option>I wear dentures and want something fixed</option>
+            <option>Several of these</option>
+          </select>
+        </label>
+        <p style="margin-top:20px;font-weight:600">Your 5 photos</p>
+        <p style="font-size:.82rem;color:var(--muted)">Natural light, no filters, no direct flash. A friend or your phone's timer helps.</p>
+        <div class="shots">
+          <label class="shot"><svg viewBox="0 0 80 50"><path d="M8 22c10-12 54-12 64 0-10 18-54 18-64 0z" fill="#f3ebdd" stroke="#b39159"/><path d="M18 24h44" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg><b>1 · Close smile</b>Smile wide, camera at mouth height<input type="file" name="photo_smile" accept="image/*"></label>
+          <label class="shot"><svg viewBox="0 0 80 50"><path d="M20 22c10-12 50-10 54 0-6 16-44 18-54 0z" fill="#f3ebdd" stroke="#b39159"/><path d="M28 24h40" stroke="#fff" stroke-width="7" stroke-linecap="round"/><path d="M8 26h10" stroke="#b39159" stroke-width="3" stroke-linecap="round"/></svg><b>2 · Right side</b>Bite normally, pull your cheek back<input type="file" name="photo_right" accept="image/*"></label>
+          <label class="shot"><svg viewBox="0 0 80 50"><path d="M6 22c4-10 44-12 54 0-10 18-48 16-54 0z" fill="#f3ebdd" stroke="#b39159"/><path d="M12 24h40" stroke="#fff" stroke-width="7" stroke-linecap="round"/><path d="M62 26h10" stroke="#b39159" stroke-width="3" stroke-linecap="round"/></svg><b>3 · Left side</b>Bite normally, pull your cheek back<input type="file" name="photo_left" accept="image/*"></label>
+          <label class="shot"><svg viewBox="0 0 80 50"><path d="M12 40C12 8 68 8 68 40" fill="none" stroke="#b39159" stroke-width="2"/><path d="M18 38C18 14 62 14 62 38" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><path d="M18 38C18 14 62 14 62 38" fill="none" stroke="#e9dcc6" stroke-width="1"/></svg><b>4 · Upper teeth</b>Mouth open, head back, camera up<input type="file" name="photo_upper" accept="image/*"></label>
+          <label class="shot"><svg viewBox="0 0 80 50"><path d="M12 10C12 42 68 42 68 10" fill="none" stroke="#b39159" stroke-width="2"/><path d="M18 12C18 36 62 36 62 12" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><path d="M18 12C18 36 62 36 62 12" fill="none" stroke="#e9dcc6" stroke-width="1"/></svg><b>5 · Lower teeth</b>Mouth open, tongue up, camera down<input type="file" name="photo_lower" accept="image/*"></label>
+        </div>
+        <label class="f">X-ray or CT scan (optional)<input type="file" name="xray" accept="image/*,.pdf,.dcm" style="max-width:100%;text-transform:none;letter-spacing:0;font-weight:400"></label>
+        <label class="f" style="margin-top:14px">Message (optional)<textarea name="message" placeholder="Tell us what you'd like to achieve, or when you're thinking of traveling."></textarea></label>
+        <label class="consent"><input type="checkbox" name="consent" required> I accept the privacy notice and authorize Dental Solutions to use my photos and health information to assess my case.</label>
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <button class="btn btn-primary" type="submit">Send my photos</button>
+          <a class="btn btn-ghost" id="formwa" href="https://wa.me/529841145997" target="_blank" rel="noopener">Send them on WhatsApp instead</a>
+        </div>
+        <p style="font-size:.76rem;color:var(--muted);margin-top:12px">Your photos are stored privately and seen only by the clinical team.</p>
+        <div class="thanks" id="thanks"><strong>Got it. Thank you.</strong> Your photos are with the clinical team. Expect your pre-assessment within 24 hours by email or WhatsApp.</div>
+      </form>
+
+      <aside class="box side">
+        <div class="eyebrow">Prefer to talk first?</div>
+        <h3 style="margin:10px 0 12px">Book a free video call with Dr. Carolina's team.</h3>
+        <p style="color:var(--ink-soft);font-size:.92rem">On WhatsApp video, FaceTime or Zoom, whichever you prefer. In English or Spanish.</p>
+        <ol style="margin-top:16px">
+          <li>Message us on WhatsApp with a time that works for you.</li>
+          <li>We confirm the slot in Cancún time, which never changes for daylight saving.</li>
+          <li>You leave the call knowing whether you're a candidate.</li>
+        </ol>
+        <a class="wa" href="https://wa.me/529841145997?text=Hi!%20I'd%20like%20to%20book%20a%20free%20video%20call%20about%20my%20smile." target="_blank" rel="noopener">💬 Book on WhatsApp</a>
+        <p style="font-size:.76rem;color:var(--muted);margin-top:14px">Your in-clinic appointment in Cancún is confirmed with a deposit through secure online payment. See our deposit policy above.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap faq">
+    <div>
+      <div class="eyebrow">Questions</div>
+      <h2 style="margin-top:10px">What people ask before they travel.</h2>
+    </div>
+    <div>
+      <details><summary>Will I know the price before I travel?</summary><p>Yes. After your photo assessment you receive a written plan with your treatment, appointments, days in Cancún and price. It also says clearly what is not included, such as flights, hotel and meals, so there are no surprises.</p></details>
+      <details><summary>Do I need a passport?</summary><p>Yes. Flying from the United States or Canada to Mexico requires a valid passport. Check your country's requirements before buying your flight.</p></details>
+      <details><summary>Does the team speak English?</summary><p>Yes. We look after you in English and Spanish throughout the process, from your first message to your follow-up at home.</p></details>
+      <details><summary>Can someone travel with me?</summary><p>Yes. Your companion is welcome at the clinic and during transfers.</p></details>
+      <details><summary>What if I need an adjustment once I'm home?</summary><p>We stay in touch after your treatment. If a question or adjustment comes up, we review it with you by video and agree on next steps, according to your treatment and its warranty.</p></details>
+      <details><summary>Who places the implants?</summary><p>Treatment is led by Dr. Carolina Aguirre, with Dr. Edgar Mendoza in implantology. We use Neodent and Alpha-Bio Tec implant systems and plan with 3D imaging.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section style="padding-bottom:10px">
+  <div class="wrap">
+    <div class="panel final">
+      <h2>Tell us what you want to improve. We'll guide you before you book a flight.</h2>
+      <div class="hero-ctas">
+        <a class="btn btn-light" href="#assessment">Request my assessment</a>
+        <a class="btn btn-outline-light" href="#quiz">Design your smile</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <div><strong style="color:var(--ink)">Dental Solutions · Puerto Cancún</strong><br>Smile at life with joy and confidence.</div>
+    <div>WhatsApp <a href="https://wa.me/529841145997">+52 984 114 5997</a><br><a href="mailto:contact.dentalsolutions@gmail.com">contact.dentalsolutions@gmail.com</a></div>
+    <div>Prices in US dollars, for reference.<br>Final price confirmed in your written plan.</div>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a class="btn btn-primary" href="#assessment">Free photo review</a>
+  <a class="btn" style="background:#25d366;color:#fff" href="https://wa.me/529841145997" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+/* ---------- smile quiz ---------- */
+(function(){
+  const Q=[
+    {q:"What would you like to improve first?",h:"Pick what matters most today.",k:"goal",o:[
+      ["color","Color of my teeth"],["shape","Shape or size"],["gaps","Gaps between teeth"],["worn","Worn or chipped teeth"],["missing","Missing teeth"],["denture","I wear dentures"]]},
+    {q:"How many teeth are involved?",h:"A rough idea is enough.",k:"count",o:[
+      ["one","One or two"],["few","Three to six"],["front","All my front teeth"],["arch","A full arch or my whole mouth"]]},
+    {q:"What matters most in the result?",h:"There is no wrong answer.",k:"pri",o:[
+      ["natural","Natural and subtle"],["bright","Bright and noticeable"],["durable","Long-lasting"],["budget","The most accessible option"]]},
+    {q:"When are you thinking of coming?",h:"This helps us plan your stay.",k:"when",o:[
+      ["soon","Within 3 months"],["later","In 3 to 6 months"],["year","Later this year"],["exploring","Just exploring"]]}
+  ];
+  const A={}; let i=0;
+  const stage=document.getElementById('qstage'), res=document.getElementById('qresult');
+  const bar=document.getElementById('qbar'), cnt=document.getElementById('qcount');
+  function render(){
+    res.classList.remove('on'); stage.style.display='block';
+    const s=Q[i]; cnt.textContent=String(i+1).padStart(2,'0')+' / 0'+Q.length; bar.style.width=((i+1)/Q.length*100)+'%';
+    stage.innerHTML='<h3>'+s.q+'</h3><p class="hint">'+s.h+'</p><div class="opts">'+
+      s.o.map((o,n)=>'<button type="button" class="opt" data-v="'+o[0]+'" data-l="'+o[1]+'"><span class="k">'+String.fromCharCode(65+n)+'</span>'+o[1]+'</button>').join('')+'</div>';
+    stage.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{A[s.k]={v:b.dataset.v,l:b.dataset.l}; i++; i<Q.length?render():finish();});
+  }
+  function route(){
+    const g=A.goal.v,c=A.count.v,p=A.pri.v;
+    if(g==='denture'||g==='missing'&&c==='arch') return ["All-on-4 or All-on-6","A fixed full arch on implants. Two stays of 5 to 7 days. From $9,900 per arch for phase one."];
+    if(g==='missing') return ["Dental implants","Implant, abutment and crown, from $1,744 per tooth. Two stages, planned in 3D."];
+    if(g==='worn'&&c==='one') return ["Crown or composite repair","Depends on how much tooth is left. Your photos tell us which."];
+    if(p==='budget'||(g==='gaps'&&c!=='arch')) return ["Composite veneers","Hand-sculpted in 2 to 3 days. From $250 per tooth, 1-year warranty."];
+    if(c==='front'||c==='arch') return ["Smile design with E-max veneers","Ceramic veneers on your visible teeth. 3 to 4 days. From $450 per tooth, 5-year warranty."];
+    return ["E-max or composite veneers","We'll compare both on your photos and recommend the least invasive one."];
+  }
+  function finish(){
+    stage.style.display='none'; cnt.textContent='Done'; bar.style.width='100%';
+    const r=route(); document.getElementById('rname').textContent=r[0]; document.getElementById('rdesc').textContent=r[1];
+    const msg="Hi! I took the smile quiz on your website.\n- I want to improve: "+A.goal.l+"\n- Teeth involved: "+A.count.l+"\n- Most important: "+A.pri.l+"\n- Timing: "+A.when.l+"\nSuggested route: "+r[0]+". Could you assess my case?";
+    document.getElementById('rwa').href="https://wa.me/529841145997?text="+encodeURIComponent(msg);
+    res.classList.add('on');
+  }
+  document.getElementById('rrestart').onclick=()=>{i=0;render();};
+  render();
+})();
+
+/* ---------- testimonial videos: one plays at a time ---------- */
+document.querySelectorAll('.reel figure').forEach(f=>{
+  const v=f.querySelector('video');
+  f.querySelector('.play').onclick=()=>{
+    document.querySelectorAll('.reel video').forEach(o=>{if(o!==v){o.pause();o.closest('figure').classList.remove('playing');}});
+    v.controls=true; v.play(); f.classList.add('playing');
+  };
+  v.addEventListener('ended',()=>f.classList.remove('playing'));
+});
+/* load first frames only when the reel is near the viewport */
+new IntersectionObserver((es,o)=>{es.forEach(e=>{if(e.isIntersecting){document.querySelectorAll('.reel video').forEach(v=>v.preload='metadata');o.disconnect();}})},{rootMargin:'400px'}).observe(document.querySelector('.reel'));
+
+/* ---------- photo slots ---------- */
+document.querySelectorAll('.shot input').forEach(inp=>inp.addEventListener('change',()=>inp.closest('.shot').classList.toggle('done',inp.files.length>0)));
+
+/* ---------- form: AJAX submit to Netlify, WhatsApp fallback carries their details ---------- */
+const form=document.getElementById('aform');
+form.addEventListener('input',()=>{
+  const n=form.elements.name.value, g=form.elements.goal.value;
+  const t="Hi! I'd like a free smile assessment."+(n?" My name is "+n+".":"")+(g?" I'd like to improve: "+g+".":"")+" I'll send my 5 photos here.";
+  document.getElementById('formwa').href="https://wa.me/529841145997?text="+encodeURIComponent(t);
+});
+form.addEventListener('submit',async e=>{
+  e.preventDefault();
+  const btn=form.querySelector('button[type=submit]'); btn.disabled=true; btn.textContent='Sending…';
+  try{
+    const r=await fetch('/',{method:'POST',body:new FormData(form)});
+    if(!r.ok) throw new Error(r.status);
+    document.getElementById('thanks').style.display='block'; btn.textContent='Sent ✓';
+  }catch(err){
+    btn.disabled=false; btn.textContent='Send my photos';
+    alert("Your photos didn't go through. Please tap 'Send them on WhatsApp instead' and we'll take it from there.");
+  }
+});
+</script>
+</body>
+</html>
