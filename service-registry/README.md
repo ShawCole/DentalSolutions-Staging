@@ -41,7 +41,7 @@ python3 meta_ad_audit.py --account act_<DENTALCANCUN_ID> --out ./audit
 Read-only. It never creates, edits, pauses, or spends.
 
 ## Known gaps
-1. **No Meta access.** ArkData BM `1821437278968539` cannot see a DentalCancun ad account,
+1. **No Meta access.** IntentMagic BM `1821437278968539` cannot see a DentalCancun ad account,
    so every `ad_lineage` array is empty and no ad has been audited. Partner access with
    `ads_read` unblocks this.
 2. **Aesthetics SKUs missing.** New aesthetics services are not in the April price list.

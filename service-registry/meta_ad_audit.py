@@ -62,7 +62,7 @@ def main():
     # 0. Confirm access before doing anything else.
     me = get(acct, {"fields": "id,name,account_status,currency,timezone_name"}, tok)
     if "error" in me or not me.get("id"):
-        sys.exit(f"ERROR: cannot read {acct}. Grant ArkData (BM 1821437278968539) "
+        sys.exit(f"ERROR: cannot read {acct}. Grant IntentMagic (BM 1821437278968539) "
                  f"partner access with ads_read, then re-run.\n{me.get('error','')}")
     print(f"Account: {me.get('name')} ({me['id']})  status={me.get('account_status')} {me.get('currency')}")
 
