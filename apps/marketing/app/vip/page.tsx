@@ -1,27 +1,6 @@
-"use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 export default function VIPLandingPage() {
-    const [timeLeft, setTimeLeft] = useState(3600 * 24 * 2 + 1543); // 2 days example
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
-        }, 1000);
-        return () => clearInterval(timer);
-    }, []);
-
-    const formatTime = (seconds: number) => {
-        const d = Math.floor(seconds / (3600 * 24));
-        const h = Math.floor((seconds % (3600 * 24)) / 3600);
-        const m = Math.floor((seconds % 3600) / 60);
-        const s = seconds % 60;
-        return { d, h, m, s };
-    };
-
-    const { d, h, m, s } = formatTime(timeLeft);
-
     return (
         <div className="min-h-screen bg-white font-sans text-primary selection:bg-gold selection:text-white">
             {/* Header */}
@@ -94,21 +73,6 @@ export default function VIPLandingPage() {
                         <p className="mb-10 text-xl font-light text-white/80 leading-relaxed max-w-xl">
                             We have reimagined dental tourism for discerning American patients who want world-class dentistry and a luxury travel experience — in one seamless journey.
                         </p>
-
-                        {/* Countdown */}
-                        <div className="mb-8 flex gap-4">
-                            {[
-                                { label: "Days", val: d },
-                                { label: "Hrs", val: h },
-                                { label: "Min", val: m },
-                                { label: "Sec", val: s },
-                            ].map((item, i) => (
-                                <div key={i} className="rounded-xl bg-white/10 p-4 text-center backdrop-blur-md border border-white/10 w-20">
-                                    <div className="text-2xl font-serif font-bold text-gold">{item.val.toString().padStart(2, "0")}</div>
-                                    <div className="text-[10px] uppercase tracking-widest text-white/40">{item.label}</div>
-                                </div>
-                            ))}
-                        </div>
                     </div>
 
                     <div className="rounded-3xl bg-white p-10 text-primary shadow-2xl animate-fade-up delay-200">
