@@ -24,16 +24,6 @@ const nextConfig = {
   experimental: {
     // other experimental options if needed
   },
-  // Staging sets NOINDEX=true in its Netlify env; production leaves it unset.
-  async headers() {
-    if (process.env.NOINDEX !== "true") return [];
-    return [
-      {
-        source: "/:path*",
-        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
-      },
-    ];
-  },
 };
 
 export default nextConfig;

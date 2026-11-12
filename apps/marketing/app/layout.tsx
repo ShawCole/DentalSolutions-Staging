@@ -17,6 +17,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "DentalSolutions Cancun | Premium Dental Tourism",
   description: "Experience the pinnacle of dental tourism. Award-winning specialists and luxury smile transformations in the heart of Cancun.",
+  // Staging sets NOINDEX=true in its Netlify env; production leaves it unset.
+  ...(process.env.NOINDEX === "true" && { robots: { index: false, follow: false } }),
 };
 
 export default function RootLayout({
