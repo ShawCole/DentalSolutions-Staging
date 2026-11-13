@@ -88,7 +88,7 @@ export default function SchedulePage() {
                             <div className="grid gap-6">
                                 {[
                                     { title: "No Hidden Costs", desc: "Our quotes are all-inclusive. What you see is exactly what you pay." },
-                                    { title: "Pain-Free Technology", desc: "Experience the latest in minimally invasive sedation and laser dentistry." },
+                                    { title: "Gentle, Carefully Planned Care", desc: "Minimally invasive options when clinically appropriate. Every treatment plan is confirmed after a professional assessment." },
                                     { title: "Fast Turnaround", desc: "Complete restorations in as little as 5-7 days thanks to our in-house lab." }
                                 ].map((item, i) => (
                                     <div key={i} className="flex gap-6 group cursor-default">

@@ -40,7 +40,7 @@ export default function SmileDesignPage() {
                         <span className="text-[#D4AF37] italic">Fly Home Sunday.</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-white/90 font-bold tracking-wide uppercase">
-                        No-Prep Veneers. No Drilling. No Pain.
+                        Gentle, carefully planned care.
                     </p>
                     <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto font-light leading-relaxed">
                         Boutique cosmetic dentistry by Dr.&nbsp;Carolina Aguirre,&nbsp;M.S. &mdash; 25&nbsp;years of precision, 15&nbsp;minutes from Cancun&nbsp;Airport.
@@ -142,7 +142,7 @@ export default function SmileDesignPage() {
 
                         <div className="w-full md:w-3/5 space-y-6">
                             <p className="text-lg md:text-xl text-neutral-700 leading-relaxed">
-                                With over 25 years of specialization in aesthetic and cosmetic dentistry, Dr. Carolina has transformed thousands of smiles using the latest techniques in non-invasive and minimally invasive veneer treatments.
+                                With over 25 years of specialization in aesthetic and cosmetic dentistry, Dr. Carolina has transformed thousands of smiles with carefully planned veneer care. Minimally invasive options are considered when clinically appropriate.
                             </p>
                             <p className="text-lg md:text-xl text-neutral-700 leading-relaxed">
                                 Her passion for creating natural, beautiful smiles combined with her meticulous attention to detail has made her one of the most sought-after smile designers in Quintana Roo, Mexico.
@@ -231,7 +231,7 @@ export default function SmileDesignPage() {
                 <div className="container mx-auto px-4 max-w-4xl text-center">
                     <h2 className="text-sm font-bold tracking-[0.2em] text-amber-600 uppercase mb-6">The Definition</h2>
                     <p className="text-2xl md:text-3xl font-serif leading-relaxed text-neutral-800">
-                        &quot;Non-invasive veneers are ultra-thin, highly aesthetic porcelain or ceramic shells that are bonded to the surface of the teeth with <span className="text-amber-600 font-bold bg-amber-50 px-2 italic">minimal or no tooth reduction</span>. The goal is to improve the shape, size, color, and proportion of your teeth while preserving their natural structure.&quot;
+                        &quot;Veneers are ultra-thin, highly aesthetic porcelain or ceramic shells bonded to the surface of the teeth. <span className="text-amber-600 font-bold bg-amber-50 px-2 italic">Minimally invasive options are considered when clinically appropriate.</span> Every treatment plan is confirmed after a professional assessment.&quot;
                     </p>
                 </div>
             </section>
@@ -250,7 +250,7 @@ export default function SmileDesignPage() {
                     <div className="grid md:grid-cols-3 gap-6 mb-20">
                         {[
                             { icon: "💎", title: "Same Materials, Fraction of the Price", desc: "Gold-diamond, carbon diamonds, and zirconia — the same premium materials used in the US. $15k here vs $40–50k stateside." },
-                            { icon: "✈️", title: "Weekend Turnaround", desc: "Fly in Friday, get your dream smile, fly home Sunday. Non-invasive veneers done in a single trip." },
+                            { icon: "✈️", title: "Weekend Turnaround", desc: "Fly in Friday, get your dream smile, fly home Sunday. Minimally invasive options are considered when clinically appropriate." },
                             { icon: "🎓", title: "25 Years of Expertise", desc: "Dr. Carolina Aguirre holds a Master's degree and has 25 years of precision cosmetic dentistry experience." },
                         ].map((item, i) => (
                             <div key={i} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors group">
@@ -329,11 +329,11 @@ export default function SmileDesignPage() {
 
                     <Accordion type="single" collapsible className="w-full space-y-4">
                         {[
-                            { q: "Is there really no tooth reduction?", a: "In most cases, there is no reduction. In specific situations, a minimal adjustment may be required to achieve harmony and a perfect fit." },
+                            { q: "How is tooth preparation decided?", a: "Preparation, if any, depends on the tooth and the plan. Minimally invasive options are considered when clinically appropriate. Every treatment plan is confirmed after a professional assessment." },
                             { q: "Do they look natural?", a: "Yes. We use high-aesthetic ceramics that mimic the translucency and texture of natural enamel." },
-                            { q: "Do they require anesthesia?", a: "Generally, no. Since there is no deep tooth preparation, the procedure is usually comfortable and minimally invasive." },
+                            { q: "How is comfort planned?", a: "Comfort measures, including whether anesthesia is appropriate, are discussed individually. Every treatment plan is confirmed after a professional assessment." },
                             { q: "How long do they last?", a: "With proper care, they can last for many years. Longevity depends on habits, bite, and maintenance." },
-                            { q: "Can they be removed in the future?", a: "By preserving the tooth structure, the treatment is more conservative and offers greater flexibility compared to traditional techniques." },
+                            { q: "Can they be removed in the future?", a: "Whether a veneer can later be removed depends on the tooth and the plan. Every treatment plan is confirmed after a professional assessment." },
                             { q: "Can they fall out?", a: "They are bonded using advanced adhesive protocols. The risk is low when the case is properly indicated." }
                         ].map((item, i) => (
                             <AccordionItem key={i} value={`item-${i}`} className="border rounded-lg px-4 bg-neutral-50">

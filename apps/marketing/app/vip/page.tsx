@@ -77,7 +77,7 @@ export default function VIPLandingPage() {
 
                     <div className="rounded-3xl bg-white p-10 text-primary shadow-2xl animate-fade-up delay-200">
                         <h3 className="mb-6 text-2xl font-serif font-bold">Secure Your VIP Reservation</h3>
-                        <p className="mb-8 text-sm text-zinc-500 font-light">Join the elite program today and credit $397 toward your treatment deposit.</p>
+                        <p className="mb-8 text-sm text-zinc-500 font-light">Join the elite program today and credit $500 USD toward your treatment deposit.</p>
                         <form className="space-y-4">
                             <div className="grid gap-4 sm:grid-cols-2">
                                 <input type="text" placeholder="First Name" className="rounded-xl border border-zinc-100 bg-zinc-50 p-4 text-sm focus:border-gold outline-none transition-all" />

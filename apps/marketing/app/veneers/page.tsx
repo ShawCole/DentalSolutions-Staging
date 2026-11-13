@@ -42,16 +42,16 @@ export default function VeneersPage() {
 
                         <div className="grid gap-16 md:grid-cols-2 items-center">
                             <div className="space-y-6 order-2 md:order-1">
-                                <h2 className="text-3xl font-serif font-bold text-primary">No-Prep / Minimal Prep</h2>
+                                <h2 className="text-3xl font-serif font-bold text-primary">Minimally Invasive Options</h2>
                                 <p className="text-lg text-zinc-600 font-light leading-relaxed">
-                                    A conservative, non-invasive approach that preserves your natural tooth structure. Ideal for patients seeking a subtle yet significant enhancement without the need for drilling.
+                                    A conservative approach, with minimally invasive options when clinically appropriate. Every treatment plan is confirmed after a professional assessment.
                                 </p>
-                                <a href="/lp/no-prep-veneers" className="text-gold font-bold hover:underline">Learn more about No-Prep Veneers →</a>
+                                <a href="/lp/no-prep-veneers" className="text-gold font-bold hover:underline">Learn more about veneer options →</a>
                             </div>
                             <div className="relative aspect-video overflow-hidden rounded-3xl shadow-2xl order-1 md:order-2">
                                 <Image
                                     src="/redesign/PHOTO-2025-12-17-21-07-18 2.jpg"
-                                    alt="No-Prep Veneers"
+                                    alt="Veneer options"
                                     fill
                                     className="object-cover"
                                 />
